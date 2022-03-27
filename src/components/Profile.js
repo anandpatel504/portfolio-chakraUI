@@ -2,7 +2,14 @@ import React from "react";
 import { useMediaQuery } from "@chakra-ui/media-query";
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import Icon from "@chakra-ui/icon";
-import { DiCodeigniter, DiAndroid, DiWebplatform } from "react-icons/di";
+import {
+  DiCodeigniter,
+  DiAndroid,
+  DiWebplatform,
+  DiNodejs,
+  DiNodejsSmall,
+  DiDatabase,
+} from "react-icons/di";
 
 function Profile() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
@@ -21,7 +28,7 @@ function Profile() {
           Years of Experience
         </Text>
       </Box>
-      <Box alignSelf="center" px="32" py="16">
+      <Box alignSelf="center" px="25" py="12">
         <Text fontWeight="" fontSize="1xl">
           Backend developer who love such as writing APIs, libraries and working
           with system components, business processes, and data architecture.
@@ -36,9 +43,9 @@ function Profile() {
             w="30vh"
             justify="flex-end"
           >
-            <Icon color="white" p="4" as={DiAndroid} w="24" h="24" />
+            <Icon color="white" p="4" as={DiNodejsSmall} w="24" h="24" />
             <Text color="white" p="4" fontSize="xl" fontWeight="semibold">
-              Android Apps
+              Nodejs
             </Text>
           </Flex>
           <Flex
@@ -52,9 +59,9 @@ function Profile() {
             justify="flex-end"
             _hover={{ bg: "teal.400" }}
           >
-            <Icon color="black" p="4" as={DiCodeigniter} w="24" h="24" />
+            <Icon color="black" p="4" as={DiDatabase} w="24" h="24" />
             <Text color="black" p="4" fontSize="xl" fontWeight="semibold">
-              Flutter Apps
+              Database
             </Text>
           </Flex>
           <Flex

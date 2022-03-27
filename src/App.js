@@ -4,9 +4,9 @@ import { IconButton } from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,
-  FaInstagram,
-  FaFacebook,
+  FaTwitterSquare,
   FaLinkedin,
+  FaInstagram,
   FaGithub,
 } from "react-icons/fa";
 import Header from "./components/Header";
@@ -23,23 +23,36 @@ function App() {
           Hey Anand
         </Heading>
         <Spacer></Spacer>
-        <IconButton
-          icon={<FaLinkedin />}
-          isRound="true"
-          onClick={toggleColorMode}
-        ></IconButton>
-        <IconButton
-          ml={2}
-          icon={<FaInstagram />}
-          isRound="true"
-          onClick={toggleColorMode}
-        ></IconButton>
-        <IconButton
-          ml={2}
-          icon={<FaGithub />}
-          isRound="true"
-          onClick={"https://github.com/anandpatel504"}
-        ></IconButton>
+        <a href="https://www.instagram.com/anand.coder/" target="_blank">
+          <IconButton
+            icon={<FaInstagram />}
+            isRound="true"
+            // onClick={toggleColorMode}
+          ></IconButton>
+        </a>
+        <a href="https://www.linkedin.com/in/anandpatel504/" target="_blank">
+          <IconButton
+            icon={<FaLinkedin />}
+            isRound="true"
+            // onClick={toggleColorMode}
+          ></IconButton>
+        </a>
+        <a href="https://twitter.com/anandpatel504" target="_blank">
+          <IconButton
+            ml={2}
+            icon={<FaTwitterSquare />}
+            isRound="true"
+            // onClick={toggleColorMode}
+          ></IconButton>
+        </a>
+        <a href="https://github.com/anandpatel504" target="_blank">
+          <IconButton
+            ml={2}
+            icon={<FaGithub />}
+            isRound="true"
+            // onClick={LinkHandler}
+          ></IconButton>
+        </a>
         <IconButton
           ml={8}
           icon={isDark ? <FaSun /> : <FaMoon />}
