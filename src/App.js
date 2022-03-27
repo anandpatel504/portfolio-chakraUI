@@ -23,16 +23,17 @@ function App() {
           Hey Anand
         </Heading>
         <Spacer></Spacer>
-        <a href="https://www.instagram.com/anand.coder/" target="_blank">
+        <a href="https://www.linkedin.com/in/anandpatel504/" target="_blank">
           <IconButton
-            icon={<FaInstagram />}
+            icon={<FaLinkedin />}
             isRound="true"
             // onClick={toggleColorMode}
           ></IconButton>
         </a>
-        <a href="https://www.linkedin.com/in/anandpatel504/" target="_blank">
+        <a href="https://www.instagram.com/anand.coder/" target="_blank">
           <IconButton
-            icon={<FaLinkedin />}
+            ml={2}
+            icon={<FaInstagram />}
             isRound="true"
             // onClick={toggleColorMode}
           ></IconButton>
